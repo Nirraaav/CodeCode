@@ -1,4 +1,6 @@
-import eulerlib
+import eulerlib, time
+
+start_time = time.time()
 
 divisors = eulerlib.Divisors(1000000)
 
@@ -17,4 +19,5 @@ for i in range(2, 100000):
 		mn = min(mn, i/divisors.phi(i))
 
 print(f"Minimum is {mn}")
+print("%s seconds" % (time.time() - start_time))
 

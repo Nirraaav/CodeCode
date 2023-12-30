@@ -15,8 +15,8 @@ def f(n):
     if n == 4:
         return 8
     
-    result = f(n-2) % (1e9 + 7) + f(n-3) % (1e9 + 7) + f(n-4) % (1e9 + 7) + f(n-1) % (1e9 + 7)
-    memo[n] = result % (1e9 + 7)
+    result = f(n-2) % (10**9 + 7) + f(n-3) % (10**9 + 7) + f(n-4) % (10**9 + 7) + f(n-1) % (10**9 + 7)
+    memo[n] = result % (10**9 + 7)
     return result
 
-print(f(70) % (1e9+7))
+print(f(70) % (10**9+7))

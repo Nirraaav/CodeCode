@@ -49,4 +49,4 @@ def compute2():
 if __name__ == "__main__":
     #print(compute())
     print(compute2())
-    # print("--- %s seconds ---" % (time.time() - start_time))
+    print("--- %s seconds" % (time.time() - start_time))

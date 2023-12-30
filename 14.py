@@ -1,4 +1,6 @@
-import eulerlib, math
+import eulerlib, math, time
+
+start_time = time.time()
 
 primes = eulerlib.primes_wheel_fact(84070)
 primes.remove(2)
@@ -12,3 +14,4 @@ for i in range(len(primes)):
 	ans += (sum % primes[i])
 
 print(ans)
+print("%s seconds" % (time.time() - start_time))

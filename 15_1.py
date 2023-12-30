@@ -1,5 +1,5 @@
 import time, math, eulerlib, itertools
-start_time = time.time()
+# start_time = time.time()
 
 #primes = eulerlib.primes(10**7)
    
@@ -84,5 +84,6 @@ def compute1(limit):
     return minimum, n
                 
 if __name__ == "__main__":
+    start_time = time.time()
     print(compute1(100000))
-    # print("--- %s seconds ---" % (time.time() - start_time))
+    print("%s seconds" % (time.time() - start_time))
